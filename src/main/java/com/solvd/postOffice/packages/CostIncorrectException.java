@@ -4,4 +4,8 @@ public class CostIncorrectException extends Exception{
     public CostIncorrectException(String message) {
         super(message);
     }
+
+    public CostIncorrectException() {
+        super("Wrong cost");
+    }
 }

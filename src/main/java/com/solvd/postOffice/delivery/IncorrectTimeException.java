@@ -4,4 +4,8 @@ public class IncorrectTimeException extends Exception {
     public IncorrectTimeException(String message) {
         super(message);
     }
+
+    public IncorrectTimeException() {
+        super("Wrong time");
+    }
 }

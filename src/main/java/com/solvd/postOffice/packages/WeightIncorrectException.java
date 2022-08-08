@@ -4,4 +4,8 @@ public class WeightIncorrectException extends Exception {
     public WeightIncorrectException(String message) {
         super(message);
     }
+
+    public WeightIncorrectException() {
+        super("Wrong weight");
+    }
 }
