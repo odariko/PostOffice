@@ -1,4 +1,19 @@
 # Project exclude paths
-/out/
-/.idea/
-/PostOffice.iml/
+out
+
+*.log
+
+*.ctxt
+
+.idea
+
+*mtj.tmp/
+
+*.jar
+*.nar
+*.war
+*.ear
+*.zip
+*.rar
+
+*.iml
