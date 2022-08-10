@@ -6,7 +6,6 @@ public class Order {
     private Cost cost;
     private Customer customer;
     private WhoPays whoPays;
-
     private Package aPackage;
 
     public Order() {}

@@ -3,16 +3,17 @@ import com.solvd.postOffice.persons.Customer;
 import com.solvd.postOffice.persons.Employee;
 
 import java.util.List;
+import java.util.Set;
 
 public class PostOffice {
     private Address address;
-    private List<Employee> employees;
+    private Set<Employee> employees;
     private List<Customer> customers;
     private Storage storage;
 
     public PostOffice() {}
 
-    public PostOffice(Address address, List<Employee> employees, List<Customer> customers, Storage storage){
+    public PostOffice(Address address, Set<Employee> employees, List<Customer> customers, Storage storage){
         this.address = address;
         this.employees = employees;
         this.customers = customers;
@@ -27,11 +28,11 @@ public class PostOffice {
         this.address = address;
     }
 
-    public List<Employee> getEmployees() {
+    public Set<Employee> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(List<Employee> employees) {
+    public void setEmployees(Set<Employee> employees) {
         this.employees = employees;
     }
 
