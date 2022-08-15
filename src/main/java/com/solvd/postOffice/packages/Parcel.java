@@ -17,9 +17,9 @@ public class Parcel extends Package {
         this.worth = worth;
     }
 
-    public Parcel(PostalCode postalCode, Cost cost, Sender sender, Receiver receiver, ParcelType parcelType,
+    public Parcel(PostalCode postalCode, ParcelType parcelType,
                   double weight, Cost worth){
-        super(postalCode, cost, sender, receiver);
+        super(postalCode);
         this.parcelType = parcelType;
         this.weight = weight;
         this.worth = worth;
@@ -57,9 +57,7 @@ public class Parcel extends Package {
         else if (obj == null || obj.getClass() != this.getClass())
             return false;
         else if (((Parcel) obj).weight == this.weight && ((Parcel) obj).worth == this.worth &&
-                ((Parcel) obj).parcelType == this.parcelType && ((Parcel) obj).getPostalCode() == this.getPostalCode() &&
-                ((Parcel) obj).getCost() == this.getCost() && ((Parcel) obj).getSender() == this.getSender() &&
-                ((Parcel) obj).getReceiver() == this.getReceiver())
+                ((Parcel) obj).parcelType == this.parcelType && ((Parcel) obj).getPostalCode() == this.getPostalCode())
             return true;
         else return false;
     }

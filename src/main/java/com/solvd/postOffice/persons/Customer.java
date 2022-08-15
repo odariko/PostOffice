@@ -1,5 +1,4 @@
 package com.solvd.postOffice.persons;
-import com.solvd.postOffice.buildiings.SavingThings;
 import com.solvd.postOffice.packages.Order;
 import com.solvd.postOffice.tools.CustomerType;
 
@@ -36,11 +35,12 @@ public abstract class Customer extends Person implements Payable {
         return order;
     }
 
-    public void setOrder(int customerID) {
+    public void setOrder(Order order) {
         this.order = order;
     }
 
-    public void makeOrder() {
+    public void makeOrder(Order order) {
+        setOrder(order);
         log.info("Customer makes order");
     };
 

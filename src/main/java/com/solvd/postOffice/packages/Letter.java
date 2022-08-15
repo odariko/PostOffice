@@ -12,8 +12,8 @@ public class Letter extends Package {
         this.letterType = letterType;
     }
 
-    public Letter(PostalCode postalCode, Cost cost, Sender sender, Receiver receiver, LetterType letterType){
-        super(postalCode, cost, sender, receiver);
+    public Letter(PostalCode postalCode, LetterType letterType){
+        super(postalCode);
         this.letterType = letterType;
     }
 
@@ -31,9 +31,7 @@ public class Letter extends Package {
             return true;
         else if (obj == null || obj.getClass() != this.getClass())
             return false;
-        else if (((Letter) obj).letterType == this.letterType && ((Letter) obj).getPostalCode() == getPostalCode() &&
-                ((Letter) obj).getCost() == getCost() && ((Letter) obj).getSender() == this.getSender() &&
-                ((Letter) obj).getReceiver() == this.getReceiver())
+        else if (((Letter) obj).letterType == this.letterType && ((Letter) obj).getPostalCode() == getPostalCode())
             return true;
         else return false;
     }
@@ -41,7 +39,7 @@ public class Letter extends Package {
     @Override
     public int hashCode() {
         int result = 700;
-        result += letterType.hashCode() + getPostalCode().hashCode() + getReceiver().hashCode();
+        result += letterType.hashCode() + getPostalCode().hashCode();
         return result;
     }
 
