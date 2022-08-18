@@ -6,6 +6,7 @@ out
 *.ctxt
 
 .idea
+target
 
 *mtj.tmp/
 

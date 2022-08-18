@@ -3,6 +3,7 @@ import com.solvd.postOffice.buildiings.Address;
 import com.solvd.postOffice.packages.*;
 import com.solvd.postOffice.packages.Package;
 import com.solvd.postOffice.persons.Receiver;
+import com.solvd.postOffice.string.StringTask;
 import com.solvd.postOffice.tools.CustomerType;
 import com.solvd.postOffice.persons.Sender;
 import com.solvd.postOffice.tools.ParcelType;
@@ -15,6 +16,8 @@ import java.io.Console;
 public class Main {
     private static final Logger log = LogManager.getLogger();
     public static void main(String[] args) {
+        StringTask.read();
+
         Cost cost1 = new Cost("grn", 20);
         PostalCode postalCode1 = new PostalCode("province1", "town1", "postoff1");
         Parcel package1 = new Parcel(postalCode1, ParcelType.Standard, 20, cost1);

@@ -1,0 +1,111 @@
+[33mcommit 3b5f7926af706d34147d2cdea0009f097a09fe30[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Wed Aug 10 15:25:49 2022 +0300
+
+    add
+
+[33mcommit 7ba7f92d3062da0b5658ad194e8a1d17b3c6c558[m
+Merge: 93beedf f9887bb
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Wed Aug 10 15:24:05 2022 +0300
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       .idea/vcs.xml
+    #       PostOffice.iml
+
+[33mcommit 93beedf2f77d92346459904b417c37dd58eab6ff[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Wed Aug 10 15:23:24 2022 +0300
+
+    add
+
+[33mcommit f9887bb42da823a693353dd9a301ef657eb0d7a0[m
+Author: odariko <47506563+odariko@users.noreply.github.com>
+Date:   Mon Aug 8 20:03:25 2022 +0300
+
+    Delete PostOffice.iml
+
+[33mcommit fe89bff31f627b132225e795ec9bca5098c432cc[m
+Author: odariko <47506563+odariko@users.noreply.github.com>
+Date:   Mon Aug 8 20:03:15 2022 +0300
+
+    Delete .idea directory
+
+[33mcommit 6ee66fc5767aa85578c699346a4851023f948678[m
+Merge: 7d8ef5f dc29a2f
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:36:27 2022 +0300
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       .idea/vcs.xml
+    #       PostOffice.iml
+
+[33mcommit 7d8ef5f313da31e4f6ec4e1113061a643f0fe0c2[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:36:03 2022 +0300
+
+    add
+
+[33mcommit dc29a2f4fdc0f0c054a96eff88523bb7aee5c7be[m
+Author: odariko <47506563+odariko@users.noreply.github.com>
+Date:   Mon Aug 8 19:26:35 2022 +0300
+
+    Delete PostOffice.iml
+
+[33mcommit 72f9077c6a56353fec2255466d098b47efb00082[m
+Author: odariko <47506563+odariko@users.noreply.github.com>
+Date:   Mon Aug 8 19:26:27 2022 +0300
+
+    Delete .idea directory
+
+[33mcommit 600ebcb64789ce3bb170400b87147886fe471319[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:25:02 2022 +0300
+
+    add
+
+[33mcommit 3e04f92632317a64a372d75ee13bb7f8be8c9d64[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:20:01 2022 +0300
+
+    add
+
+[33mcommit 9d522a4748195ecea074e63697e0118e6f914ddb[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:18:05 2022 +0300
+
+    add
+
+[33mcommit 19c6c5dd5432739eb136dd037e43235a1be09b8b[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:14:47 2022 +0300
+
+    add
+
+[33mcommit 3cab9e9453f642a1d0e2cd89f4cbedae8c7cc50b[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 19:10:27 2022 +0300
+
+    add
+
+[33mcommit dea100b0e7f996c8d5cdbee00c63e17354229188[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 16:56:51 2022 +0300
+
+    add src
+
+[33mcommit 4649c0b621bd572f14019fa1ae63cbf879c2ae01[m
+Author: odariko <47506563+odariko@users.noreply.github.com>
+Date:   Mon Aug 8 15:18:14 2022 +0300
+
+    Create README.md
+
+[33mcommit 8a803d902ccfe6b2f538f2a2f6166248b199ac44[m
+Author: odariko <daria.gvendoline@gmail.com>
+Date:   Mon Aug 8 15:17:08 2022 +0300
+
+    Initial commit
