@@ -6,7 +6,7 @@ import com.solvd.postOffice.packages.Parcel;
 
 import java.util.List;
 
-public class Storage implements SavingThings {
+public class Storage {
     private List<Letter> letters;
     private List<Parcel> parcels;
     private int freeDaysOfStorage;

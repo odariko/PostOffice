@@ -1,5 +1,6 @@
 package com.solvd.postOffice;
 import com.solvd.postOffice.buildiings.Address;
+import com.solvd.postOffice.buildiings.SavingThings;
 import com.solvd.postOffice.packages.*;
 import com.solvd.postOffice.packages.Package;
 import com.solvd.postOffice.persons.Receiver;
@@ -11,12 +12,20 @@ import com.solvd.postOffice.tools.WhoPays;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.Console;
+import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 
 public class Main {
     private static final Logger log = LogManager.getLogger();
     public static void main(String[] args) {
-        StringTask.read();
+        SavingThings savingThings = x -> x > 0;
+        log.info(savingThings.storingPackages(10));
+        Class aClass = Address.class;
+        final Field[] fields = Address.class.getFields();
+        List<String> actualFieldNames = getFieldNames(fields);
 
         Cost cost1 = new Cost("grn", 20);
         PostalCode postalCode1 = new PostalCode("province1", "town1", "postoff1");
@@ -33,5 +42,11 @@ public class Main {
         Address address2 = new Address("Ukraine", "Odesa", "Pushkina", 3, 5);
         Order order2 = new Order(cost1, WhoPays.Sender, package2);
         Receiver receiver2 = new Receiver("Hrystyna", "Avramenko", CustomerType.Receiver, order2, address2);
+    }
+
+    private static List<String> getFieldNames(Field[] fields) {
+        return Arrays.stream(fields)
+                .map(Field::getName)
+                .collect(Collectors.toList());
     }
 }
