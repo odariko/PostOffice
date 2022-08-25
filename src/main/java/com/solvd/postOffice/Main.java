@@ -21,11 +21,6 @@ import java.util.stream.Collectors;
 public class Main {
     private static final Logger log = LogManager.getLogger();
     public static void main(String[] args) {
-        SavingThings savingThings = x -> x > 0;
-        log.info(savingThings.storingPackages(10));
-        Class aClass = Address.class;
-        final Field[] fields = Address.class.getFields();
-        List<String> actualFieldNames = getFieldNames(fields);
 
         Cost cost1 = new Cost("grn", 20);
         PostalCode postalCode1 = new PostalCode("province1", "town1", "postoff1");
@@ -42,11 +37,5 @@ public class Main {
         Address address2 = new Address("Ukraine", "Odesa", "Pushkina", 3, 5);
         Order order2 = new Order(cost1, WhoPays.Sender, package2);
         Receiver receiver2 = new Receiver("Hrystyna", "Avramenko", CustomerType.Receiver, order2, address2);
-    }
-
-    private static List<String> getFieldNames(Field[] fields) {
-        return Arrays.stream(fields)
-                .map(Field::getName)
-                .collect(Collectors.toList());
     }
 }
